@@ -21,10 +21,21 @@ The baseline model achieves this by using Canny Edge Detection to produce the li
 
 ### Baseline Model
 
-Input |  Output
-:-:|:-:
-![Tristan Gretzky](data/inputs/Tristan_Gretzky_0001.jpg) | ![Tristan Gretzky](data/outputs/Baseline_Tristan_Gretzky_0001.jpg)
+Input | Line Sketch | Colors | Output
+:-:|:-:|:-:|:-:
+![Tristan Gretzky](data/inputs/Tristan_Gretzky_0001.jpg) | ![Tristan Gretzky](data/outputs/Canny_Tristan_Gretzky_0001.jpg) | ![Tristan Gretzky](data/outputs/KMeans_Tristan_Gretzky_0001.jpg) | ![Tristan Gretzky](data/outputs/Baseline_Tristan_Gretzky_0001.jpg)
+![TJ Ford](data/inputs/TJ_Ford_0001.jpg) | ![TJ Ford](data/outputs/Canny_TJ_Ford_0001.jpg) | ![TJ Ford](data/outputs/KMeans_TJ_Ford_0001.jpg) | ![TJ Ford](data/outputs/Baseline_TJ_Ford_0001.jpg)
+![Victoria Clarke](data/inputs/Victoria_Clarke_0004.jpg) | ![Victoria Clarke](data/outputs/Canny_Victoria_Clarke_0004.jpg) | ![Victoria Clarke](data/outputs/KMeans_Victoria_Clarke_0004.jpg) | ![Victoria Clarke](data/outputs/Baseline_Victoria_Clarke_0004.jpg)
+![Zhang Wenkang](data/inputs/Zhang_Wenkang_0002.jpg) | ![Zhang Wenkang](data/outputs/Canny_Zhang_Wenkang_0002.jpg) | ![Zhang Wenkang](data/outputs/KMeans_Zhang_Wenkang_0002.jpg) | ![Zhang Wenkang](data/outputs/Baseline_Zhang_Wenkang_0002.jpg)
 
+### Final Model
+
+Input | Colors
+:-:|:-:
+![Aishwarya Rai](data/inputs/Aishwarya_Rai_0001.jpg) | ![Aishwarya Rai](data/outputs/Region_Aishwarya_Rai_0001.jpg)
+![Arnold Schwarzenegger](data/inputs/Arnold_Schwarzenegger_0004.jpg) | ![Arnold Schwarzenegger](data/outputs/Region_Arnold_Schwarzenegger_0004.jpg)
+![Sachin Tendulkar](data/inputs/Sachin_Tendulkar_0001.jpg) | ![Sachin Tendulkar](data/outputs/Region_Sachin_Tendulkar_0001.jpg)
+![Aung San Suu Kyi](data/inputs/Aung_San_Suu_Kyi_0001.jpg) | ![Aung San Suu Kyi](data/outputs/Region_Aung_San_Suu_Kyi_0001.jpg)
 
 
 ## Team Information

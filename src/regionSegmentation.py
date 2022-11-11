@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import skimage.morphology
 
-def colorPalette(image, structureSize=15, minimumEdge=50):
+def colorPalette(image, structureSize=15, minimumEdge=50, gradientThreshold=10):
     '''
     Input:
     image - RGB image.
@@ -24,17 +24,17 @@ def colorPalette(image, structureSize=15, minimumEdge=50):
     erosionReconstruct = skimage.morphology.reconstruction(np.invert(dilated), np.invert(dilationReconstruct)).astype(np.uint8)
     grayRegions = np.invert(erosionReconstruct).astype(np.uint8)
 
-    gradientThreshold = 10
     sobelX = cv2.Sobel(grayRegions, cv2.CV_64F, 1, 0)
     sobelY = cv2.Sobel(grayRegions, cv2.CV_64F, 0, 1)
     magnitude = (np.sqrt(sobelX ** 2.0 + sobelY ** 2.0) > gradientThreshold).astype(np.uint8)
 
     count, magnitude, _, _ = cv2.connectedComponentsWithStats(magnitude, 8, cv2.CV_32S)
-    magnitude[magnitude > 0] = 1
 
     for i in range(count):
         if (np.sum(magnitude == i) < minimumEdge):
             magnitude[magnitude == i] = 0
+    
+    magnitude[magnitude > 0] = 1
 
     labelCount, labels, _, _ = cv2.connectedComponentsWithStats((1 - magnitude).astype(np.uint8), 8, cv2.CV_32S)
     paletteImage = cv2.cvtColor(image, cv2.COLOR_RGB2LAB)
