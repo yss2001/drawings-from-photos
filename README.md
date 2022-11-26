@@ -30,12 +30,12 @@ Input | Line Sketch | Colors | Output
 
 ### Final Model
 
-Input | Colors
-:-:|:-:
-![Aishwarya Rai](data/inputs/Aishwarya_Rai_0001.jpg) | ![Aishwarya Rai](data/outputs/Region_Aishwarya_Rai_0001.jpg)
-![Arnold Schwarzenegger](data/inputs/Arnold_Schwarzenegger_0004.jpg) | ![Arnold Schwarzenegger](data/outputs/Region_Arnold_Schwarzenegger_0004.jpg)
-![Sachin Tendulkar](data/inputs/Sachin_Tendulkar_0001.jpg) | ![Sachin Tendulkar](data/outputs/Region_Sachin_Tendulkar_0001.jpg)
-![Aung San Suu Kyi](data/inputs/Aung_San_Suu_Kyi_0001.jpg) | ![Aung San Suu Kyi](data/outputs/Region_Aung_San_Suu_Kyi_0001.jpg)
+Input | Line Sketch | Colors | Output
+:-:|:-:|:-:|:-:
+![Aishwarya Rai](data/inputs/Aishwarya_Rai_0001.jpg) | ![Aishwarya Rai](data/outputs/LIC_Aishwarya_Rai_0001.jpg) | ![Aishwarya Rai](data/outputs/Region_Aishwarya_Rai_0001.jpg) | ![Aishwarya Rai](data/outputs/Final_Aishwarya_Rai_0001.jpg)
+![Arnold Schwarzenegger](data/inputs/Arnold_Schwarzenegger_0004.jpg) | ![Arnold Schwarzenegger](data/outputs/LIC_Arnold_Schwarzenegger_0004.jpg) | ![Arnold Schwarzenegger](data/outputs/Region_Arnold_Schwarzenegger_0004.jpg) | ![Arnold Schwarzenegger](data/outputs/Final_Arnold_Schwarzenegger_0004.jpg)
+![Sachin Tendulkar](data/inputs/Sachin_Tendulkar_0001.jpg) | ![Sachin Tendulkar](data/outputs/LIC_Sachin_Tendulkar_0001.jpg) | ![Sachin Tendulkar](data/outputs/Region_Sachin_Tendulkar_0001.jpg) | ![Sachin Tendulkar](data/outputs/Final_Sachin_Tendulkar_0001.jpg)
+![Aung San Suu Kyi](data/inputs/Aung_San_Suu_Kyi_0001.jpg) | ![Aung San Suu Kyi](data/outputs/LIC_Aung_San_Suu_Kyi_0001.jpg) | ![Aung San Suu Kyi](data/outputs/Region_Aung_San_Suu_Kyi_0001.jpg) | ![Aung San Suu Kyi](data/outputs/Final_Aung_San_Suu_Kyi_0001.jpg)
 
 
 ## Team Information

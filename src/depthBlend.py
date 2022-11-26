@@ -14,10 +14,10 @@ def blender(nprImage, grayImage, grayFactor=0.5):
     Blends the grayscale image of the original photo with the flat non photo realistic image. Both images are blurred before the element wise multiplication.
     '''
 
-    blendedImage = cv2.GaussianBlur(nprImage, (3,3), 1.5)
+    blendedImage = cv2.GaussianBlur(nprImage, (3,3), 0.1)
     blendedImage = blendedImage.astype(np.float64) / 255.0
-    colorDepth = grayFactor * cv2.GaussianBlur(grayImage, (3,3), 1.5)
-    colorDepth = colorDepth.astype(np.float64) / 255.0
+    colorDepth = cv2.GaussianBlur(grayImage, (3,3), 5)
+    colorDepth = (colorDepth.astype(np.float64) * grayFactor) / 255.0
     colorDepth = colorDepth + (0.5 - np.mean(colorDepth))
 
     blendedImage[:,:,0] = blendedImage[:, :, 0] * colorDepth
